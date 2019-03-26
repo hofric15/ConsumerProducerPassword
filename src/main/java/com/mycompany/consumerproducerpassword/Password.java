@@ -10,5 +10,22 @@ package com.mycompany.consumerproducerpassword;
  * @author Richard Hofmeister
  */
 public class Password {
+    private String password;
+
+    public Password(String password) {
+        this.password = password;
+    }
+
+    public String getPassword() {
+        return password;
+    }
     
+    public boolean check(String password)
+    {
+        if(this.password.equals(password))
+        {
+            return true;
+        }
+        return false;
+    }
 }
